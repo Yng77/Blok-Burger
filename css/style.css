@@ -83,6 +83,10 @@ body {
 /*** HEADER ***/
 
 .header {
+  border-bottom: 1px solid #dedede;
+}
+
+.header-wrapper {
   display: flex;
   align-items: center;
   gap: 19.6rem;
@@ -100,7 +104,7 @@ body {
 .nav {
   flex-grow: 1;
   display: flex;
-  gap: 4.6rem;
+  gap: 4.9rem;
 }
 
 .nav-link {
@@ -169,6 +173,7 @@ body {
   background-position: center center;
   text-align: center;
   padding: 14.2rem 0;
+  margin-bottom: 14rem;
 }
 
 .breadcrumbs {
@@ -203,7 +208,7 @@ body {
   font-size: 7.9rem;
   font-weight: 700;
   color: var(--light);
-  padding: 0.8rem 0 1.1rem;
+  margin: 0.8rem 0 1.1rem;
 }
 
 .hero-description {
@@ -212,4 +217,72 @@ body {
   line-height: 1.6;
   color: rgba(var(--light-rgb), 0.8);
   margin: 0 auto;
+}
+
+/*** BANNER ***/
+
+.banner {
+  color: var(--light);
+}
+
+.banner-wrapper {
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem;
+  margin-bottom: 10rem;
+}
+
+.banner-title {
+  font-family: var(--nanito-sans);
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1.27;
+  margin-bottom: 1rem;
+}
+
+.banner-title span {
+  display: block;
+  max-width: 9.5rem;
+  /* height: 2.8rem; */
+  background-color: var(--accent-dark);
+  border-radius: 1.4rem;
+
+  font-family: var(--open-sans);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.28;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-bottom: 0.3rem;
+}
+
+.banner-description {
+  max-width: 30.8rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: rgba(var(--light-rgb), 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.banner-btn {
+  max-height: 5.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--dark);
+  background-color: var(--accent-light);
+
+  font-family: var(--nanito-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.28;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 2.5rem;
+}
+
+.banner-btn:hover {
+  background-color: var(--accent-dark);
+  color: var(--light);
 }
