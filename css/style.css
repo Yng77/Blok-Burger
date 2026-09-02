@@ -170,6 +170,40 @@ body {
   left: 1.7rem;
 }
 
+.button-up {
+  border-color: transparent;
+  border-radius: 5px;
+  color: var(--dark);
+  background-color: var(--accent-light);
+  cursor: pointer;
+
+  font-family: var(--nanito-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.28;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 1rem;
+
+  transition: all 0.3s;
+
+  position: fixed;
+  right: 2.5rem;
+  bottom: 1rem;
+}
+
+.button-up:hover {
+  color: var(--light);
+}
+
+.button-up.hidden {
+  opacity: 0;
+}
+
+.button-up.visible {
+  opacity: 1;
+}
+
 /*** HERO ***/
 
 .hero {
@@ -179,6 +213,7 @@ body {
   background-position: center center;
   text-align: center;
   padding: 14.2rem;
+  margin-bottom: 14rem;
 }
 
 .hero-contact {
@@ -276,6 +311,8 @@ body {
 }
 
 .banner-btn {
+  display: block;
+  max-width: 17rem;
   max-height: 5.8rem;
   border: none;
   border-radius: 5px;
@@ -515,7 +552,7 @@ body {
 .contact {
   display: flex;
   gap: 2rem;
-  padding: 14rem 7.1rem 6rem 5.2rem;
+  padding: 0 7.1rem 6rem 5.2rem;
 }
 
 .contact-map {
@@ -627,3 +664,7 @@ span .contact-info {
   position: absolute;
   left: 0;
 }
+
+/*** MEDIA ***/
+
+@media;

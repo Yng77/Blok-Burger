@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="headerTop">
     <div class="container">
       <div class="header-wrapper">
         <div class="logo"></div>
@@ -22,7 +22,7 @@
           <a class="nav-link" href="#">Главная</a>
           <a class="nav-link" href="#">Меню</a>
           <a class="nav-link" href="#">О нас</a>
-          <a class="nav-link" href="#">Контакты</a>
+          <a class="nav-link" href="contact.html">Контакты</a>
         </nav>
         <a class="cart" href="#">
           $125
@@ -56,14 +56,15 @@
           Только при покупке 3-х и более позиций,
           мы дарим скидку. Акции не&nbsp;суммируются.
         </p>
-        <button type="button" class="banner-btn">
+        <a class="banner-btn" href="#menuBurger">
           Купить сейчас
-        </button>
+        </a>
       </div>
     </div>
   </section>
+
   <main>
-    <section>
+    <section id="menuBurger">
       <div class="container">
         <div class="menu">
           <div class="menu-header">
@@ -177,7 +178,7 @@
             <a class="footer-link" href="#">Меню</a>
             <a class="footer-link" href="#">Заказ и Доставка</a>
             <a class="footer-link" href="#">Методы оплаты</a>
-            <a class="footer-link" href="#">Контакты</a>
+            <a class="footer-link" href="contact.html">Контакты</a>
           </nav>
         </div>
         <div class="footer-item">
@@ -202,6 +203,8 @@
     </div>
   </footer>
 
+  <a class="button-up hidden" id="btnUp" href="#headerTop">Наверх</a>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
