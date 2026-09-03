@@ -52,6 +52,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 /*** GENERAL STYLES ***/
 
 :root {
@@ -98,6 +103,15 @@ body {
   padding: 2.6rem 0;
 }
 
+.burger-menu {
+  display: none;
+  width: 3.4rem;
+  height: 2.2rem;
+  background-image: url(../img/burger-menu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .logo {
   width: 17.6rem;
   height: 5.6rem;
@@ -134,6 +148,10 @@ body {
 
 .nav-link:hover:after {
   background-color: var(--accent-light);
+}
+
+.modal {
+  display: block;
 }
 
 .cart {
@@ -174,7 +192,6 @@ body {
 }
 
 .button-up {
-  border-color: transparent;
   border-radius: 5px;
   color: var(--dark);
   background-color: var(--accent-light);
@@ -317,7 +334,6 @@ body {
   display: block;
   max-width: 17rem;
   max-height: 5.8rem;
-  border: none;
   border-radius: 5px;
   color: var(--dark);
   background-color: var(--accent-light);
@@ -432,7 +448,6 @@ body {
   gap: 1rem;
 
   background-color: var(--accent-light);
-  border: none;
   border-radius: 5px;
   cursor: pointer;
 
@@ -676,87 +691,4 @@ span .contact-info {
 
   position: absolute;
   left: 0;
-}
-
-/*** MEDIA ***/
-
-@media (max-width: 68em) {
-  .header-wrapper {
-    gap: 4rem;
-  }
-
-  .nav {
-    margin-left: 0;
-    margin-right: 0;
-    gap: min(3vw, 3rem);
-  }
-}
-
-@media (max-width: 48em) {
-  .header-wrapper {
-    gap: 4.5rem;
-  }
-
-  .logo {
-    width: 15rem;
-    height: 4.7rem;
-  }
-
-  .nav {
-    gap: 2.2rem;
-  }
-
-  .hero {
-    margin-bottom: 7.2rem;
-  }
-
-  .banner-wrapper {
-    padding-left: 4rem;
-    margin-bottom: 8rem;
-  }
-
-  .menu-box {
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 8.9rem;
-  }
-
-  .menu-box--additional .menu-item {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .menu-box--additional .menu-info {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 40%;
-    margin-top: 5.5rem;
-  }
-
-  .menu-box--additional .menu-thumb {
-    flex-basis: calc(60% + 2rem);
-    height: 26rem;
-    margin-bottom: 0;
-  }
-
-  .menu-box--additional {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-wrapper {
-    padding-top: 5.9rem;
-    padding-bottom: 7.1rem;
-  }
-
-  .footer-item:last-child {
-    display: none;
-  }
-
-  .footer-tel._mobile {
-    display: block;
-    text-align: left;
-  }
-
-  .footer-nav {
-    margin-bottom: 1.3rem;
-  }
 }

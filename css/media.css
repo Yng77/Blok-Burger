@@ -1,0 +1,174 @@
+/*** MEDIA ***/
+
+/* 1088px */
+
+@media (max-width: 68em) {
+  /* HEADER */
+
+  .header-wrapper {
+    gap: 4rem;
+  }
+
+  .nav {
+    margin-left: 0;
+    margin-right: 0;
+    gap: min(3vw, 3rem);
+  }
+}
+
+/* 768px */
+
+@media (max-width: 48em) {
+  /* HEADER */
+
+  .header-wrapper {
+    gap: 4.5rem;
+  }
+
+  .logo {
+    width: 15rem;
+    height: 4.7rem;
+  }
+
+  .nav {
+    gap: 2.2rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    margin-bottom: 7.2rem;
+  }
+
+  /* BANNER */
+
+  .banner-wrapper {
+    padding-left: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  /* MENU */
+
+  .menu-box {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 8.9rem;
+  }
+
+  .menu-box--additional .menu-item {
+    display: flex;
+    gap: 2rem;
+  }
+
+  /* MENU ADDITIONAL */
+
+  .menu-box--additional .menu-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    margin-top: 5.5rem;
+  }
+
+  .menu-box--additional .menu-thumb {
+    flex-basis: calc(60% + 2rem);
+    height: 26rem;
+    margin-bottom: 0;
+  }
+
+  .menu-box--additional {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+
+  .footer-wrapper {
+    padding-top: 5.9rem;
+    padding-bottom: 7.1rem;
+  }
+
+  .footer-item:last-child {
+    display: none;
+  }
+
+  .footer-tel._mobile {
+    display: block;
+    text-align: left;
+  }
+
+  .footer-nav {
+    margin-bottom: 1.3rem;
+  }
+}
+
+/* 720px */
+
+@media (max-width: 45em) {
+  /* HEADER */
+
+  .header-wrapper {
+    gap: 2.1rem;
+    padding: 2rem 0;
+  }
+
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 11.6rem;
+    height: 3.7rem;
+    flex-grow: 1;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-link:after {
+    display: none;
+  }
+
+  .nav._modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 44rem;
+    background-color: #fff8dc;
+    padding: 4rem 1.5rem;
+    position: absolute;
+    top: -40rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+
+  .modal-close {
+    display: block;
+    background-image: url(../img/burger-menu-close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    padding: 5.5rem 0;
+    margin-bottom: 3.3rem;
+  }
+
+  .breadcrumbs {
+    font-size: 1.4rem;
+  }
+}

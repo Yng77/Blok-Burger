@@ -11,16 +11,18 @@
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
   <header class="header" id="headerTop">
     <div class="container">
       <div class="header-wrapper">
+        <button class="burger-menu" onclick="openModal()"></button>
         <div class="logo"></div>
         <nav class="nav">
           <a class="nav-link" href="#">Главная</a>
-          <a class="nav-link" href="#">Меню</a>
+          <a class="nav-link" href="#menuBurger">Меню</a>
           <a class="nav-link" href="#">О нас</a>
           <a class="nav-link" href="contact.html">Контакты</a>
         </nav>
@@ -219,6 +221,15 @@
   </footer>
 
   <a class="button-up hidden" id="btnUp" href="#headerTop">Наверх</a>
+  <div class="modal" id="modal">
+    <nav class="nav _modal">
+      <a class="nav-link" href="#">Главная</a>
+      <a class="nav-link" href="#menuBurger">Меню</a>
+      <a class="nav-link" href="#">О нас</a>
+      <a class="nav-link" href="contact.html">Контакты</a>
+    </nav>
+    <button class="modal-close" onclick="closeModal()"></button>
+  </div>
   <script src="js/main.js"></script>
 </body>
 
