@@ -123,9 +123,8 @@ body {
 .nav {
   flex-grow: 1;
   display: flex;
-  gap: 4.9rem;
+  gap: 5.6rem;
   margin-left: min(10vw, 14rem);
-  margin-right: min(10vw, 14rem);
 }
 
 .nav-link {
@@ -151,7 +150,7 @@ body {
 }
 
 .modal {
-  display: block;
+  display: none;
 }
 
 .cart {
@@ -388,6 +387,11 @@ body {
   line-height: 1.6;
   color: var(--dark);
   padding: 1rem 3rem;
+}
+
+.menu-select:focus {
+  border: 1px solid var(--line);
+  outline: none;
 }
 
 .menu-box {

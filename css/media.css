@@ -11,7 +11,6 @@
 
   .nav {
     margin-left: 0;
-    margin-right: 0;
     gap: min(3vw, 3rem);
   }
 }
@@ -61,14 +60,14 @@
 
   /* MENU ADDITIONAL */
 
-  .menu-box--additional .menu-info {
+  .menu-item._additionaly .menu-info {
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
     margin-top: 5.5rem;
   }
 
-  .menu-box--additional .menu-thumb {
+  .menu-item._additionaly .menu-thumb {
     flex-basis: calc(60% + 2rem);
     height: 26rem;
     margin-bottom: 0;
@@ -76,6 +75,7 @@
 
   .menu-box--additional {
     grid-template-columns: 1fr;
+    margin-bottom: 14rem;
   }
 
   /* FOOTER */
@@ -135,6 +135,7 @@
   }
 
   .modal {
+    display: block;
     width: 100%;
     max-width: 44rem;
     background-color: #fff8dc;
@@ -170,5 +171,134 @@
 
   .breadcrumbs {
     font-size: 1.4rem;
+  }
+
+  .hero-title {
+    font-size: 3.8rem;
+    margin: 2.2rem 0 0.8rem 0;
+  }
+
+  .hero-description {
+    max-width: 25.8rem;
+    font-size: 1.2rem;
+    line-height: 1.67;
+  }
+
+  /* BANNER */
+
+  .banner-wrapper {
+    padding: 3.5rem 0 3.5rem 1.7rem;
+    margin-bottom: 5rem;
+  }
+
+  .banner-description {
+    max-width: 22.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.3rem;
+  }
+
+  .banner-btn {
+    max-width: 19.7rem;
+  }
+
+  /* MENU */
+
+  .menu-header {
+    margin-bottom: 2.4rem;
+  }
+
+  .menu-box {
+    row-gap: 2.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .menu-title {
+    font-size: 2.7rem;
+    line-height: 2.07;
+  }
+
+  .menu-select {
+    flex-basis: 13.6rem;
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 0.8rem 1.2rem 0.8rem 1.5rem;
+  }
+
+  .menu-thumb {
+    height: 50vw;
+    margin-bottom: 0.7rem;
+  }
+
+  .menu-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.54;
+    margin-bottom: 0;
+  }
+
+  .menu-price {
+    font-size: 1.2rem;
+    line-height: 2.33;
+    margin-bottom: 0.7rem;
+  }
+
+  .menu-btn {
+    padding-right: 2.2rem;
+  }
+
+  /* MENU ADDITIONAL */
+
+  .menu-box--additional {
+    margin-bottom: 8rem;
+  }
+
+  .menu-item._additionaly .menu-info {
+    margin-top: 2.5rem;
+  }
+}
+
+/* 448px */
+
+@media (max-width: 28em) {
+  /* MENU ADDITIONAL */
+
+  .menu-item._additionaly .menu-thumb {
+    flex-basis: calc(100% - 13rem - 2rem);
+    height: 38vw;
+  }
+
+  .menu-item._additionaly .menu-info {
+    flex-basis: 13rem;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 3.3rem;
+    padding: 6.1rem 0;
+    position: relative;
+  }
+
+  .footer-logo {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-title {
+    font-size: 1.8rem;
+    line-height: 2.1;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+  }
+
+  .footer-tel._mobile {
+    position: absolute;
+    top: 5.1rem;
+    right: 0;
+  }
+
+  .footer-tel._mobile:last-child {
+    top: 8.9rem;
   }
 }
